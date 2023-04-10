@@ -1,0 +1,3 @@
+D:/kdz_2/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+D:/kdz_2/cmake-build-debug/CMakeFiles/kdz_2.dir
+D:/kdz_2/cmake-build-debug/CMakeFiles/edit_cache.dir
