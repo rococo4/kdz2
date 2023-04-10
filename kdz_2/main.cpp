@@ -6,16 +6,16 @@
 #include <vector>
 std::vector<std::vector<long long>> get_times(std::string &s, int insert = 0);
 void naive_search(std::string &find, std::string &string) {
-  int count = 0;
-  for (char i : string) {
-    if (i == find[count] || find[count] == '?') {
-      if (count == find.size() - 1) {
-        count = 0;
-        continue;
+  for (auto i = 0; i < string.size(); i++) {
+    bool flag = false;
+    for (auto j = 0; j < find.size(); j++) {
+      if (string[i + j] != find[j] && find[j] != '?') {
+        flag = true;
+        break;
       }
-      count++;
-    } else {
-      count = 0;
+    }
+    if (!flag) {
+      std::cout << "find";
     }
   }
 }
